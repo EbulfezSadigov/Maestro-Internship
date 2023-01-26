@@ -4,8 +4,6 @@ let equal = document.querySelector('#calculator .response .equal')
 let operation = document.querySelector('#calculator .response .operation')
 let response = document.querySelector('#calculator .response .respond')
 
-console.log(operands);
-
 numbers.forEach(element => {
     element.addEventListener('click', (e) => {
         switch (e.target.innerText) {
@@ -34,8 +32,7 @@ numbers.forEach(element => {
                 operation.innerText = -(operation.innerText)
                 break;
             default:
-                let arr = ['+', '-', '*', '/']
-
+                let arr = ['+', '-', '*', '/', '%']
                 if (operation.innerText == 'Error!') {
                     operation.innerText = ""
                     operation.innerText += e.target.innerText;
