@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="w-screen h-screen">
+        <div id="gameBoard" class="bg-black w-[80%] h-[670px] mx-auto rounded-2xl p-10 text-white opacity-90">
+            <h1 class="text-center text-3xl">Word Game</h1>
+            <div class="flex justify-around my-6 text-center items-center">
+                <div class="w-16 h-16 leading-[64px] rounded-full bg-gray-500" id="timer">Time</div>
+                <div id="score" class="w-24 h-16 leading-[64px] rounded-full bg-gray-500 tracking-widest ml-[104px]">
+                    Score:10</div>
+                <div><button id="startBtn" class="px-14 py-2 bg-white text-black">Start</button></div>
+            </div>
+            <div class="flex justify-between">
+                <div class="w-[25%] h-[220px] rounded-md py-2 bg-black text-center">
+                    <h2 class="font-bold text-xl">How to Play</h2>
+                    <ul class=" list-disc">
+                        <li class="mb-2">Click the start button to begin</li>
+                        <li class="mb-2">Find as many words as you can</li>
+                        <li class="mb-2">You have only 30 seconds foreach word</li>
+                        <li class="mb-2">If you want to change the word,click the "Next Word" button</li>
+                    </ul>
+                </div>
+                <div class="w-[43%]">
+                    <div id="inputs" class="text-center">
+
+                    </div>
+                    <div id="buttons"
+                        class="flex font-extrabold justify-center items-baseline flex-wrap gap-2 w-[70%] mx-auto mt-10">
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">a</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">b</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">c</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">d</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">e</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">f</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">g</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">h</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">i</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">j</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">k</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">l</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">m</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">n</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">o</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">p</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">q</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">r</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">s</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">t</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">u</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">v</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">w</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">x</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">y</button>
+                        <button class="w-[65px] h-[50px] text-white bg-emerald-400 rounded-2xl myBtn">z</button>
+                    </div>
+                </div>
+                <div class="w-[22%]">
+                    <button id="next" class="px-14 py-2 bg-white text-black block w-full mb-4">Next Word</button>
+                    <button class="px-14 py-2 bg-white text-black w-full hintBtn">Hint...</button>
+                    <div class="w-[full] bg-white h-auto mt-4 text-black p-1 text-center hidden">
+                        <p class="font-bold hint"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

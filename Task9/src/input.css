@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section{
+    background-image: url(../src/images/brain.png);
+    background-position: center;
+    background-size: cover;
+}
